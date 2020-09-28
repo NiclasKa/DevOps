@@ -1,12 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  console.log(req);
-  console.log("----------------------");
-  console.log(res);
-  res.send('PING');
+  res.send("Hello from " + req.client.remoteAddress + ":" + req.client.remotePort + ' to ' +
+            req.client.localAddress + ":" + req.client.localPort);
 });
 
 module.exports = router;
