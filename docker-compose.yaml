@@ -15,4 +15,4 @@ services:
     volumes:
       - ./api:/usr/src/app
     ports:
-      - 8002:3000
+      - 0:3000
