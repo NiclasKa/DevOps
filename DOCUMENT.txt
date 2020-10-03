@@ -1,0 +1,12 @@
+{
+response1: "Hello from ::ffff:172.21.0.1:59882 to ::ffff:172.21.0.3:3001"
+},
+{
+response2: "{"data":"Hello from ::ffff:172.21.0.3:50704 to ::ffff:172.21.0.2:3000"}"
+}
+
+::ffff:172.21.0.1:59882 ipv4 address and a port. Request came from this address.
+::ffff:172.21.0.3:3001 is the ipv4 address of the container, and it is exposed on port 3001.
+
+::ffff:172.21.0.3:50704 is the same ipv4 addess as above, but the request is sent to API from different port.
+ ::ffff:172.21.0.2:3000 this is the ipv4 address of the API, which is exposed in the port 3000.
